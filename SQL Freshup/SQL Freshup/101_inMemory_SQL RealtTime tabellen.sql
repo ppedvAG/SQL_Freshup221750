@@ -58,7 +58,7 @@ DROP INDEX [NIX2] ON [dbo].[BEST]
 
 GO
 create nonclustered Columnstore Index NCCSfilter on BEST(orderid, customerid, freight, orderdate)
- WHERE (orderdate < '1.1.2020');
+ WHERE (orderdate < '1.1.2022');
 GO
 
 

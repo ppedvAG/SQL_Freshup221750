@@ -20,7 +20,7 @@ CREATE TABLE imTabelle
 
    CONSTRAINT PK_IM PRIMARY KEY NONCLUSTERED (sp1),
    INDEX IXhash HASH (id) WITH (BUCKET_COUNT = 131072) --<----- in etwa Slots
-) WITH (MEMORY_OPTIMIZED = ON, DURABILITY = Schema_only)   --> nach Neustart werden Daten rekonstruiert
+) WITH (MEMORY_OPTIMIZED = ON, DURABILITY = Schema_only)   --> nach Neustart werden Daten rekonstruiert, wenn Schema and Data
 GO
 
 --Bucketcount

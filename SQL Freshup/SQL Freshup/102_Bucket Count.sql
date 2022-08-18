@@ -40,4 +40,4 @@ SELECT
     AS 'BUCKET_COUNT'
 FROM
   (SELECT DISTINCT id 
-      FROM ku1) T
+      FROM kundeumsatz) T

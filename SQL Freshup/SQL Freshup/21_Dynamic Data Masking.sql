@@ -63,7 +63,7 @@ SELECT  CONCAT('Ausführen als: ', USER_NAME());
 
 SELECT * FROM [dbo].[Mitarbeiter];
 
-select * from mitarbeiter where gehalt > 11000
+select gehalt*10,* from mitarbeiter where gehalt > 11000
 
 REVERT; 
 

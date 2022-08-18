@@ -2,7 +2,32 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SQL Freshup">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items />
+      <Items>
+        <ConnectionNode Name="KAIRO:KAIRO\Administrator">
+          <Created>2022-08-18T10:30:06.6753635+02:00</Created>
+          <Type>SQL</Type>
+          <Server>KAIRO</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>BerlinDB</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="KAIRO\HR:KAIRO\Administrator">
+          <Created>2022-08-18T11:36:34.2555074+02:00</Created>
+          <Type>SQL</Type>
+          <Server>KAIRO\HR</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>Northwind</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
@@ -13,14 +38,14 @@
           <FullPath>01_Virtualisierung.sql</FullPath>
         </FileNode>
         <FileNode Name="02_Setup.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>02_Setup.sql</FullPath>
         </FileNode>
         <FileNode Name="03_MAXDOP.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>03_MAXDOP.sql</FullPath>
         </FileNode>
@@ -55,14 +80,14 @@
           <FullPath>080_ADR_SETUP.sql</FullPath>
         </FileNode>
         <FileNode Name="081_ADR_Fill1.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>081_ADR_Fill1.sql</FullPath>
         </FileNode>
         <FileNode Name="082_ADR_Fill2.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>082_ADR_Fill2.sql</FullPath>
         </FileNode>
@@ -73,20 +98,20 @@
           <FullPath>09_Abfragespeicher.sql</FullPath>
         </FileNode>
         <FileNode Name="100_inMemoryTabelle und_Bucket Count.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>100_inMemoryTabelle und_Bucket Count.sql</FullPath>
         </FileNode>
         <FileNode Name="101_inMemory_SQL RealtTime tabellen.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>101_inMemory_SQL RealtTime tabellen.sql</FullPath>
         </FileNode>
         <FileNode Name="102_Bucket Count.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>102_Bucket Count.sql</FullPath>
         </FileNode>
@@ -234,10 +259,35 @@
           <AssociatedConnUserName />
           <FullPath>X_Systemsichten.sql</FullPath>
         </FileNode>
+        <FileNode Name="Z_instnwnd.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Z_instnwnd.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_Spieltabelle.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Z_Spieltabelle.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Zeilenversionierung.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Zeilenversionierung.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
-      <Items />
+      <Items>
+        <FileNode Name="IM.zip">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IM.zip</FullPath>
+        </FileNode>
+      </Items>
     </LogicalFolder>
   </Items>
 </SqlWorkbenchSqlProject>

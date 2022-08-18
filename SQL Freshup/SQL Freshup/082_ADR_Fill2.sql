@@ -1,4 +1,4 @@
-WAITFOR TIME '18:47:00';
+--WAITFOR TIME '18:47:00';
 USE OldStyle;
 
 

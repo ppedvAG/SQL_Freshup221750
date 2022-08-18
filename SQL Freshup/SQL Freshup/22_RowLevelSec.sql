@@ -27,7 +27,9 @@ INSERT Sales3 VALUES
 (6, 'Sales2', 'Seat', 5);  
 GO
 
-
+--Tipp: sehr easy wirds , wenn man Daten aus dem Login verwendet
+--Anmeldename, Appname
+select SUSER_NAME(), APP_NAME()
 -- View the 6 rows in the table  
 SELECT * FROM Sales3;  
 GO
@@ -43,7 +45,8 @@ WITH SCHEMABINDING
 AS  
     RETURN SELECT 1 AS fn_securitypredicate_result   
 		WHERE 
-				@SalesRep = USER_NAME() OR 
+				@SalesRep = USER_NAME() 
+				OR 
 				USER_NAME() = 'Manager';  
 
 --angemeldeten User auslesen... vergleich mit F() und Tabellenwert--> 1 oder 0
@@ -51,7 +54,8 @@ AS
 
 --Richtlinie für F() auf Tabelle legen
 CREATE SECURITY POLICY SalesFilter3  
-ADD FILTER PREDICATE Security.fn_securitypredicate(SalesRep)   
+ADD 
+FILTER PREDICATE Security.fn_securitypredicate(SalesRep)   
 ON dbo.Sales3  
 WITH (STATE = On);  
 
@@ -79,3 +83,5 @@ ALTER SECURITY POLICY SalesFilter3
 WITH (STATE = OFF);  
 
 --------------
+
+create proc #proc 
