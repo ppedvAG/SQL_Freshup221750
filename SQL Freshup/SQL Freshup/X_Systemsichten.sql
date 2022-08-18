@@ -1,0 +1,1 @@
+select * from sys.dm_os_wait_stats where wait_type like 'CX%'
