@@ -20,6 +20,8 @@ insert into kunden (Firma, Stadt, Budget)
 select companyname, City,  round(ABS(checksum(newid())) *0.01,0) 
 from northwind..Customers
 
+select * from kunden
+
 
 --Spalten verschlüsseln: SSMS ..rechte Maustatste... Saplte verschlüsseln
 
@@ -40,8 +42,7 @@ from northwind..Customers
 
 
 --verschlüsselt
-select * from kunden
-
+select * from kunden where budget >  50000
 -- Daten lesen zu können muss SSMS ab v18 bei den Verbindungsoptien AlwaysEnc aktiviert haben
 
 --Achtung paramtetirsiere Werte (Variable) können eigtl nicht verwendet werden ..

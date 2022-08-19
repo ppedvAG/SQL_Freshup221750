@@ -20,6 +20,8 @@ GO
 insert into tblcutted values ('Hans','Moser')
 insert into tblCutted values ('Peter', 'Ibrahimnonixwissitsch')
 
+select * from tblCutted
+
 ALTER DATABASE [Northwind] SET COMPATIBILITY_LEVEL = 150
 GO
 
