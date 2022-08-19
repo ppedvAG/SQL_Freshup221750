@@ -59,7 +59,7 @@ DROP INDEX [NIX2] ON [dbo].[BEST]
 GO
 
 create nonclustered Columnstore Index NCCSfilter on BEST(orderid, customerid, freight, orderdate)
- WHERE (orderdate < '1.1.2020');
+ WHERE (orderdate < '1.8.2022');
 GO
 
 
@@ -92,3 +92,8 @@ CREATE TABLE [dbo].[BEST](
     )  
     WITH (MEMORY_OPTIMIZED = ON );  
 	
+	insert into best
+	select * from northwind..orders
+
+
+	select * from sys.dm_db_index_usage_stats

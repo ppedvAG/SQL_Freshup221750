@@ -91,3 +91,45 @@ CREATE TABLE [dbo].[BEST](
     )  
     WITH (MEMORY_OPTIMIZED = ON );  
 	
+
+	--select * into orders from Northwind..orders
+
+	insert into best
+SELECT 
+      [CustomerID]
+      ,[EmployeeID]
+      ,[OrderDate]
+      ,[RequiredDate]
+      ,[ShippedDate]
+      ,[ShipVia]
+      ,[Freight]
+      ,[ShipName]
+      ,[ShipAddress]
+      ,[ShipCity]
+      ,[ShipRegion]
+      ,[ShipPostalCode]
+      ,[ShipCountry]
+  FROM [Orders]
+
+GO 1000
+
+
+
+
+CREATE TABLE [dbo].[BEST2](
+	[OrderID] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY NONCLUSTERED,
+	[CustomerID] [nchar](5) NULL,
+	[EmployeeID] [int] NULL,
+	[OrderDate] [datetime] NULL,
+	[RequiredDate] [datetime] NULL,
+	[ShippedDate] [datetime] NULL,
+	[ShipVia] [int] NULL,
+	[Freight] [money] NULL,
+	[ShipName] [nvarchar](40) NULL,
+	[ShipAddress] [nvarchar](60) NULL,
+	[ShipCity] [nvarchar](15) NULL,
+	[ShipRegion] [nvarchar](15) NULL,
+	[ShipPostalCode] [nvarchar](10) NULL,
+	[ShipCountry] [nvarchar](15) NULL,
+)
+

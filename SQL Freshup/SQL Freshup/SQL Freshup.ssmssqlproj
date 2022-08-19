@@ -116,26 +116,26 @@
           <FullPath>102_Bucket Count.sql</FullPath>
         </FileNode>
         <FileNode Name="103_inMemory_SQL RealtTime tabellen.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>103_inMemory_SQL RealtTime tabellen.sql</FullPath>
         </FileNode>
         <FileNode Name="20_AlwaysEnc_tabelle.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>20_AlwaysEnc_tabelle.sql</FullPath>
         </FileNode>
         <FileNode Name="21_Dynamic Data Masking.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>21_Dynamic Data Masking.sql</FullPath>
         </FileNode>
         <FileNode Name="22_RowLevelSec.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>22_RowLevelSec.sql</FullPath>
         </FileNode>
@@ -151,9 +151,21 @@
           <AssociatedConnUserName />
           <FullPath>24_Security.sql</FullPath>
         </FileNode>
-        <FileNode Name="30_TSQL_CuttedData.sql">
+        <FileNode Name="25_Zeilenversionierung.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>25_Zeilenversionierung.sql</FullPath>
+        </FileNode>
+        <FileNode Name="29_ColumnStoreIndex.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>29_ColumnStoreIndex.sql</FullPath>
+        </FileNode>
+        <FileNode Name="30_TSQL_CuttedData.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>30_TSQL_CuttedData.sql</FullPath>
         </FileNode>
@@ -205,12 +217,6 @@
           <AssociatedConnUserName />
           <FullPath>50_Graph_Shortest.sql</FullPath>
         </FileNode>
-        <FileNode Name="ColumnStoreIndex.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>ColumnStoreIndex.sql</FullPath>
-        </FileNode>
         <FileNode Name="TableVariable.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -242,8 +248,8 @@
           <FullPath>X_Logfile VLF.sql</FullPath>
         </FileNode>
         <FileNode Name="X_Scoped Database.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>X_Scoped Database.sql</FullPath>
         </FileNode>
@@ -271,11 +277,11 @@
           <AssociatedConnUserName />
           <FullPath>Z_Spieltabelle.sql</FullPath>
         </FileNode>
-        <FileNode Name="Zeilenversionierung.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+        <FileNode Name="Z_Überflüssige Indizes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>Zeilenversionierung.sql</FullPath>
+          <FullPath>Z_Überflüssige Indizes.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

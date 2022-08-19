@@ -1,5 +1,6 @@
 --https://docs.microsoft.com/de-de/sql/t-sql/statements/alter-database-scoped-configuration-transact-sql?view=sql-server-ver15
 
+dbcc freeproccache
 
 --Löschen des Prozedurcaches.
 --Festlegen des MAXDOP-Parameters auf einen beliebigen Wert (1,2, ...) für die primäre Datenbank, basierend auf dem, was am besten für diese bestimmte Datenbank ist, und Festlegen eines anderen Werts (z. B. 0) für alle verwendeten sekundären Datenbanken (z. B. für Berichtsabfragen).

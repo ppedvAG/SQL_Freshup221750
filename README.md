@@ -4,17 +4,18 @@
  # Installation
  ## empf RAM
  ## MAXDOP
- ## temddb (Tracefalgs T1117/T1118)
-
+ ## tempdb (Traceflags T1117/T1118)
+ 
  # Scoped Database oder DB betreffend
  ## MAXDOP
- ## ACcelarated Database Recovery
- ## Zeilenversionierung
+ ## Accelarated Database Recovery 
+ ## Zeilenversionierung (Momentaufnahmenisolation)
 
 
  # inMemory
  ## Bucket Count
- ## kompilierte Prozeduren
+ ## kompilierte Prozeduren (dll)
+ # kombinierbar mit Columnstore (seit SQL 2017)
  
  # Securtiy
  ## Row Level 
