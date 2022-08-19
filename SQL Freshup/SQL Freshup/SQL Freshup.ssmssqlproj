@@ -50,20 +50,20 @@
           <FullPath>03_MAXDOP.sql</FullPath>
         </FileNode>
         <FileNode Name="04_Partitionierung.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>04_Partitionierung.sql</FullPath>
         </FileNode>
         <FileNode Name="05_Tabellenvar.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>05_Tabellenvar.sql</FullPath>
         </FileNode>
         <FileNode Name="06_ContainedDB.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>06_ContainedDB.sql</FullPath>
         </FileNode>
@@ -176,20 +176,20 @@
           <FullPath>31_TSQL_BatchMode_rowMode.sql</FullPath>
         </FileNode>
         <FileNode Name="32_TSQL_InlineScalarFunction.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>32_TSQL_InlineScalarFunction.sql</FullPath>
         </FileNode>
         <FileNode Name="33_TSQL_AdaptivMemoryGrant.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>33_TSQL_AdaptivMemoryGrant.sql</FullPath>
         </FileNode>
         <FileNode Name="34_TSQL__AdaptiveJoins.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>34_TSQL__AdaptiveJoins.sql</FullPath>
         </FileNode>
@@ -200,26 +200,38 @@
           <FullPath>35_TSQL_MemoryGrantFeedback.sql</FullPath>
         </FileNode>
         <FileNode Name="40_TemporalTables_1_Aktivieren.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>40_TemporalTables_1_Aktivieren.sql</FullPath>
         </FileNode>
         <FileNode Name="41_TemporalTables_2_Demo.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>41_TemporalTables_2_Demo.sql</FullPath>
         </FileNode>
         <FileNode Name="50_Graph_Shortest.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>50_Graph_Shortest.sql</FullPath>
         </FileNode>
-        <FileNode Name="TableVariable.sql">
+        <FileNode Name="51_Graphdemo.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>51_Graphdemo.sql</FullPath>
+        </FileNode>
+        <FileNode Name="60_Wartungsplan.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>60_Wartungsplan.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TableVariable.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>TableVariable.sql</FullPath>
         </FileNode>
@@ -242,8 +254,8 @@
           <FullPath>X_Glenn Berry DMVs.sql</FullPath>
         </FileNode>
         <FileNode Name="X_Logfile VLF.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO\HR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO\HR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>X_Logfile VLF.sql</FullPath>
         </FileNode>

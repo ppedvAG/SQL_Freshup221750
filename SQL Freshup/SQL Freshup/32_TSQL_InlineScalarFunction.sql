@@ -32,13 +32,13 @@ End
 --... begrenzt machbar
 set statistics io, time on
 
-select * into ku3 from ku2
 
 
-update ku3 set freight = freight * RAND(convert(varbinary, newid()))*100
-select freight, count(*) from ku3 group by freight
 
-select * from ku3 where dbo.fbrutto(freight,1.19) < 2
+update kundeumsatz set freight = freight * RAND(convert(varbinary, newid()))*100
+select freight, count(*) from kundeumsatz group by freight
+
+select * from kundeumsatz where dbo.fbrutto(freight,1.19) < 2 --eigtl im Plan immer Seek
 --, CPU-Zeit = 4094 ms, verstrichene Zeit = 4548 ms.
 
 --   CPU time = 1297 ms,  elapsed time = 1614 ms.
@@ -51,6 +51,10 @@ select * from ku3 where dbo.fbrutto(freight,1.19) < 2
 
 select inline_type, * from sys.sql_modules
 
+
+--Skalarwertf() werden in "normales" SQL Unterabfragen übersetzt. Die Anz der DS kann nur sehr gut geschätzt, daher auch weniger Ressourceverbrauch
+
+--Geht nur bei rel windigen f()
 
 --Bsp mit mehr Daten--->
 

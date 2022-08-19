@@ -30,11 +30,11 @@ ALTER DATABASE SCOPED CONFIGURATION SET MAXDOP = 4;
 GO
 ALTER DATABASE [Northwind] ADD FILEGROUP [bis100]
 GO
-ALTER DATABASE [Northwind] ADD FILE ( NAME = N'nbis100daten', FILENAME = N'D:\_SQLDB\nbis100daten.ndf' , SIZE = 8192KB , FILEGROWTH = 65536KB ) TO FILEGROUP [bis100]
+ALTER DATABASE [Northwind] ADD FILE ( NAME = N'nbis100daten', FILENAME = N'D:\_SQLDB\nbis100dxcxcaten.ndf' , SIZE = 8192KB , FILEGROWTH = 65536KB ) TO FILEGROUP [bis100]
 GO
 ALTER DATABASE [Northwind] ADD FILEGROUP [bis200]
 GO
-ALTER DATABASE [Northwind] ADD FILE ( NAME = N'nbis200daten', FILENAME = N'D:\_SQLDB\nbis200daten.ndf' , SIZE = 8192KB , FILEGROWTH = 65536KB ) TO FILEGROUP [bis200]
+ALTER DATABASE [Northwind] ADD FILE ( NAME = N'nbis200daten', FILENAME = N'D:\_SQLDB\nbis200xcxdaten.ndf' , SIZE = 8192KB , FILEGROWTH = 65536KB ) TO FILEGROUP [bis200]
 GO
 ALTER DATABASE [Northwind] ADD FILEGROUP [bis5000]
 GO
@@ -42,20 +42,20 @@ ALTER DATABASE [Northwind] ADD FILE ( NAME = N'nbis5000Daten', FILENAME = N'D:\_
 GO
 ALTER DATABASE [Northwind] ADD FILEGROUP [rest]
 GO
-ALTER DATABASE [Northwind] ADD FILE ( NAME = N'nrest', FILENAME = N'D:\_SQLDB\nrest.ndf' , SIZE = 8192KB , FILEGROWTH = 65536KB ) TO FILEGROUP [rest]
+ALTER DATABASE [Northwind] ADD FILE ( NAME = N'nrest', FILENAME = N'D:\_SQLDB\nxcrest.ndf' , SIZE = 8192KB , FILEGROWTH = 65536KB ) TO FILEGROUP [rest]
 GO
 
 
 ---
-create partition function fzahl(int)
+create partition function fzahl2(int)
 as
 RANGE  LEFT FOR VALUES (100,200);
 GO
 
 
-select $partition.fzahl(15617) --2
+select $partition.fzahl2(15617) --2
 
-create partition scheme schZahl
+create partition scheme schZahl2
 as
 partition fzahl to (bis100,bis200, rest)
 ------                 1      2     3
@@ -78,7 +78,7 @@ commit
 
 --ist dsa besser
 set statistics io, time on -- evtl auch Plan
-select * from partTab where nummer = 117 -- HEAP
+select * from partTab where id = 117 -- HEAP
 
 select * from partTab where id = 117
 
@@ -107,6 +107,15 @@ create table archiv (id int not null, nummer int, spx char(4100)) on rest
 --alle DAten von 5000 bis 20000 ins Archiv schieben
 --Grenez 100 raus...
 alter partition function fzahl() merge range (100)
+
+--SQL Express:  1GB RAM 4 Kerne 10 GB DB Größe
+
+Columnstore !!! --> 1:1 RAM
+
+Partitionierung!!!
+
+
+
 
 
 

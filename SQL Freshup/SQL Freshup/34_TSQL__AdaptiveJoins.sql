@@ -5,11 +5,17 @@ DISK = N'C:\_SQLBACKUPS\AdventureWorks2014.bak' WITH  FILE = 1,  MOVE N'Adventur
 
 GO
 
-
+---NESTED LOOP   HASH JOIN   MERGE JOIN
 --Columnstore Notwendig
 
+select * from customers c inner merge join orders o on c.customerid = o.customerid 
 
-ALTER DATABASE [AdventureWorks2014] SET COMPATIBILITY_LEVEL = 140
+select * from customers c inner loop join orders o on c.customerid = o.customerid 
+
+select * from customers c inner hash join orders o on c.customerid = o.customerid 
+
+
+ALTER DATABASE [AdventureWorks2014] SET COMPATIBILITY_LEVEL = 150
 GO
 USE AdventureWorks2014
 GO
