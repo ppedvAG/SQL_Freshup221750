@@ -9,6 +9,9 @@ insert into Contacts
 (Lastname,Firstname,Birthday, Phone, email) 
 select 'Wayne', 'Bruce','3.4.2012', '08677-3303003', 'brucew@gotham.city' 
 
+select * from contacts
+select * from contactshistory
+
 --Und nun die Änderungen, die zu einer Versionierung der Datensätze führt 
 WAITFOR DELAY '00:00:02'
 update contacts set email = 'wer@earth.de' where cid = 1 
@@ -43,7 +46,7 @@ select * ,
 --2020-04-14 18:50:43.1110912<-->2020-04-14 18:57:53.3801501
 
 --nach Version suchen
-'2021-03-19 14:19:23.6939704'
+'2022-08-19 12:14:37.000000'
 select * from contactshistory 
 where 
     Startdatum >= '19.3.2021 14:19:20'  
@@ -52,12 +55,23 @@ where
 
 --Noch besser
 select * from contacts 
-    FOR SYSTEM_TIME AS OF '19.3.2021 14:20:50'
+    FOR SYSTEM_TIME AS OF '2022-08-19 12:14:37.000000'
     where cid =1 
+union all
+select * from contacts 
+       where cid =1 
+
 
 --Neue Spalten
 Alter Table contacts
 	add spx int
+
+
+	select * from [dbo].[MSSQL_TemporalHistoryFor_581577110]
+
+
+	select * from contacts
+
 
 
 update contacts set Firstname= 'Chris', spx=2 where cid = 1

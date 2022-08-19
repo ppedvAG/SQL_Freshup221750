@@ -85,3 +85,30 @@ OUTER APPLY (select is_temporal_history_retention_enabled from sys.databases
 where name = DB_NAME()) AS DB
 LEFT JOIN sys.tables T2
 ON T1.history_table_id = T2.object_id WHERE T1.temporal_type = 2
+
+
+ ALTER TABLE dbo.contacts
+SET (SYSTEM_VERSIONING = ON)
+
+alter table contacts add SPX int
+
+alter table contacts drop column spx
+
+
+select * from contacts
+
+select * from [dbo].[MSSQL_TemporalHistoryFor_581577110]
+
+
+delete from contacts where cid = 1
+
+
+select cid  from [dbo].[MSSQL_TemporalHistoryFor_581577110]
+except
+select cid from contacts
+
+
+insert into
+select * from contacts
+intersect
+select * from [MSSQL_TemporalHistoryFor_581577110]

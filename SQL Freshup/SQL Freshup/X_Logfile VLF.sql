@@ -1,8 +1,35 @@
 --pro Logilewachstum
 
+-------------------------
+TX____ |______|TX TX|
+-------------------------
+
+CDC CDT
+
+--Das Wacshtum der Logfiles ist entscheidend ist ausschlaggebnend für die größe der VLF
+
+10MB
+----------------------------------------
+1    2      3     4    1     2     3       4
+---------------------------------------
+
+1MB
+
+-----------------------------------------
+1 2 3 4  1234 1234 1234 1234 1234 12
+-----------------------------------------
+
+
+
+VLF
+sql 2016 default Wachstum der Logfiles: +64MB
+
+select 1000/64
 --bis zu 64MB 4 
 --64 bis 1000 8
 --> 1000 16
+
+--max Anzahl an VLF 3000   6000
 
 50 MB + 50 MB Wachstum sind wieviele VLF bei typischen 10 MB Vergrößerungen?
 
